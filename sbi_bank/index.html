@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBI - India's Largest Bank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="sbi-header">
+        <div class="header-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/1200px-SBI-logo.svg.png" 
+                 alt="SBI Logo" class="sbi-logo">
+            <nav class="main-nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#personal" class="nav-link">Personal Banking</a>
+                <a href="#business" class="nav-link">Business Banking</a>
+                <a href="#loans" class="nav-link">Loans</a>
+                <button class="login-btn" onclick="showLogin()"><i class="fas fa-user"></i> Internet Banking</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to State Bank of India</h1>
+            <p>India's Most Trusted Banking Partner</p>
+            <div class="hero-search">
+                <input type="text" placeholder="What can we help you with today?">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Cards -->
+    <section class="quick-access">
+        <div class="access-card">
+            <i class="fas fa-university"></i>
+            <h3>Account Services</h3>
+            <ul>
+                <li><a href="create_account.php">Open New Account</a></li>
+                
+                <li><a href="create_account.php">Fund Transfer</a></li>
+                <li><a href="create_account.php">Check Balance</a></li>
+
+            </ul>
+        </div>
+        
+        <div class="access-card">
+            <i class="fas fa-credit-card"></i>
+            <h3>Cards & Loans</h3>
+            <ul>
+                <li><a href="#">Apply for Credit Card</a></li>
+                <li><a href="#">Personal Loan</a></li>
+                <li><a href="#">Home Loan</a></li>
+            </ul>
+        </div>
+
+        <div class="access-card">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Investments</h3>
+            <ul>
+                <li><a href="#">Fixed Deposits</a></li>
+                <li><a href="#">Mutual Funds</a></li>
+                <li><a href="#">Insurance</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Bank Services Section -->
+    <section class="bank-services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Banking</h3>
+                <p>Bank on the go with our award-winning YONO app</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security Center</h3>
+                <p>Learn how we protect your money 24/7</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Connect with our customer care executives anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rates Section -->
+    <section class="rates-section">
+        <h2>Current Rates</h2>
+        <div class="rates-grid">
+            <div class="rate-card">
+                <h3>Savings Account</h3>
+                <p class="rate-percent">2.70%</p>
+                <p>Interest Rate</p>
+            </div>
+            
+            <div class="rate-card">
+                <h3>Fixed Deposit</h3>
+                <p class="rate-percent">5.25%</p>
+                <p>(1 Year Term)</p>
+            </div>
+
+            <div class="rate-card">
+                <h3>Home Loan</h3>
+                <p class="rate-percent">6.80%</p>
+                <p>Reduced Rates</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <h2>Latest Updates</h2>
+        <div class="news-grid">
+            <article class="news-card">
+                <h3>New Digital Initiatives</h3>
+                <p>SBI launches AI-powered chatbot for instant customer support</p>
+                <a href="#">Read More →</a>
+            </article>
+            
+            <article class="news-card">
+                <h3>Financial Results</h3>
+                <p>SBI reports Q1 FY24 net profit of ₹16,884 crore</p>
+                <a href="#">Read More →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="sbi-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>About SBI</h4>
+                <ul>
+                    <li><a href="#">Our History</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">CSR Initiatives</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Branch Locator</a></li>
+                    <li><a href="#">Download Forms</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>24/7 Toll-Free Number: 1800 1234</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 State Bank of India. All Rights Reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="hideLogin()">&times;</span>
+            <h2>Internet Banking Login</h2>
+            <form id="bankLoginForm">
+                <div class="form-group">
+                    <label>Username:</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="login-links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">Register Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="bank.js"></script>
+</body>
+</html>

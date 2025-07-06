@@ -1,0 +1,436 @@
+/* Additional Styles for Enhanced Interface */
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,70,135,0.9), rgba(0,70,135,0.8)),
+                url('https://images.unsplash.com/photo-1601597111158-2fceff292cdc');
+                
+    background-size: cover;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+img.sbi-logo{
+    background: 1px solid #080202;
+    height: 100px;
+    width: 100px;
+   
+}
+nav.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Mobile par text wrap hoga */
+}
+
+a.nav-link{
+    color: #eee;
+
+   
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-search {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+}
+
+.hero-search input {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.hero-search button {
+    background: #ffc107;
+    border: none;
+    padding: 0 1.5rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Quick Access Cards */
+.quick-access {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+}
+
+.access-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.access-card i {
+    font-size: 2.5rem;
+    color: #004687;
+    margin-bottom: 1rem;
+}
+
+.access-card ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.access-card li {
+    margin: 0.5rem 0;
+}
+
+.access-card a {
+    color: #333;
+    text-decoration: none;
+}
+
+.access-card a:hover {
+    color: #004687;
+}
+
+/* Services Section */
+.bank-services {
+    padding: 4rem 2rem;
+    background: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: #004687;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Rates Section */
+.rates-section {
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+}
+
+.rates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.rate-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.rate-percent {
+    font-size: 2.5rem;
+    color: #004687;
+    margin: 1rem 0;
+}
+
+/* News Section */
+.news-section {
+    padding: 4rem 2rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.news-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.news-card h3 {
+    color: #004687;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.sbi-footer {
+    background: #004687;
+    color: white;
+    padding: 4rem 2rem 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.legal-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* Login Modal */
+.login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: white;
+    width: 400px;
+    padding: 2rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.login-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .quick-access {
+        grid-template-columns: 1fr;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f0f4f7;
+}
+
+.sbi-header {
+    background: #004687;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.sbi-logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.form-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.active {
+    display: block;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background: #004687;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-button:hover {
+    background: #003366;
+}
+
+.bank-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #004687;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.transaction-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #004687;
+    color: white;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.account-details {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+div.footer-section ul a{
+    color: #bdbbbb;
+}
+.login-modal {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.login-modal.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+/* Success Modal */
+.success-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.success-modal.active {
+    display: block;
+}
+
+.success-modal .modal-content {
+    background: white;
+    width: 400px;
+    padding: 2rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.success-modal h2 {
+    color: #004687;
+    margin-bottom: 1rem;
+}
